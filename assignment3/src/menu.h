@@ -8,7 +8,11 @@
 #include "database.h"
 #include "account.h"
 #include "accountSettings.h"
-#include "singleview.h"
+#include "singleView.h"
+#include "gmap.h"
+#include "recipe.h"
+#include "review.h"
+
 namespace Ui {
 class menu;
 }
@@ -84,13 +88,9 @@ public:
 
     void setAccount(account);
 private slots:
-    void on_buttonHeatmap_clicked();
     void on_buttonAccount_clicked();
-
-    void on_buttonRoute_clicked();
-
+    void on_buttonMap_clicked();
     void on_buttonRecipe_clicked();
-
     void on_buttonReview_clicked();
 
 private:
@@ -101,6 +101,10 @@ private:
     accountSettings *setting;
     singleView *single;
     QVector<location> list_;
+    gmap *mapper;
+    recipe *reciper;
+    review * reviewer;
+
 
     bool orderName;
     bool orderDistance;

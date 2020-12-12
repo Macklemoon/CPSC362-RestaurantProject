@@ -9,6 +9,7 @@
 #include "logindb.h"
 #include "forgot_uandp.h"
 #include "adminwindow.h"
+#include "gmap.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

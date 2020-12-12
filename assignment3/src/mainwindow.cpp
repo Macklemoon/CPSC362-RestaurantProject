@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     myDB.openDB();
     login = new loginDB();
-
 }
 
 MainWindow::~MainWindow()
@@ -25,9 +24,11 @@ void MainWindow::on_login_clicked()
     int i = 0;
     if (ui->username->text() == "admin" && ui->password->text() == "admin")
     {
+            /*
             close();
             admin = new adminWindow();
             admin->show();
+            */
     }
     else
     {
@@ -42,6 +43,9 @@ void MainWindow::on_login_clicked()
                 close();                    // close login screen
                 menu = new class menu();    // create new menu
                 menu->setAccount(login->getVector()[i]);
+
+                qDebug() << "WHITEBOX 2 | CURR ACCOUNT: " << login->getVector()[i].getEmail();
+
                 menu->show();               // show new menu
 
                 // terminates early.

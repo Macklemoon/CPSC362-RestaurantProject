@@ -1,5 +1,6 @@
 QT       += core gui
 QT       += sql
+QT       += webenginewidgets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -19,11 +20,14 @@ SOURCES += \
     deletehike.cpp \
     edithikes.cpp \
     forgot_uandp.cpp \
+    gmap.cpp \
     hike.cpp \
     logindb.cpp \
     main.cpp \
     mainwindow.cpp \
     menu.cpp \
+    recipe.cpp \
+    review.cpp \
     singleView.cpp \
     sql.cpp
 
@@ -37,10 +41,13 @@ HEADERS += \
     deletehike.h \
     edithikes.h \
     forgot_uandp.h \
+    gmap.h \
     hike.h \
     logindb.h \
     mainwindow.h \
     menu.h \
+    recipe.h \
+    review.h \
     singleView.h \
     sql.h
 
@@ -52,8 +59,11 @@ FORMS += \
     deletehike.ui \
     edithikes.ui \
     forgot_uandp.ui \
+    gmap.ui \
     mainwindow.ui \
     menu.ui \
+    recipe.ui \
+    review.ui \
     singleview.ui
 
 # Default rules for deployment.

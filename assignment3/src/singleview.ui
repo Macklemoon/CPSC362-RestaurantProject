@@ -13,19 +13,6 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QLabel" name="pic">
-   <property name="geometry">
-    <rect>
-     <x>360</x>
-     <y>20</y>
-     <width>411</width>
-     <height>311</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>pic</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
@@ -76,91 +63,6 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="park">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>170</y>
-     <width>311</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <pointsize>10</pointsize>
-    </font>
-   </property>
-   <property name="text">
-    <string>Park</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="address">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>240</y>
-     <width>191</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>address</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="phone">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>320</y>
-     <width>121</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>PHONE NUM</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="hours">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>350</y>
-     <width>131</width>
-     <height>21</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>hours</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="difficulty">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>340</y>
-     <width>311</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>difficulty</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
   <widget class="QPushButton" name="cancel">
    <property name="geometry">
     <rect>
@@ -174,97 +76,58 @@
     <string>Go Back</string>
    </property>
   </widget>
-  <widget class="QLabel" name="ascent">
+  <widget class="QLabel" name="recipe">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>380</y>
-     <width>161</width>
-     <height>16</height>
+     <x>330</x>
+     <y>120</y>
+     <width>441</width>
+     <height>371</height>
     </rect>
    </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
    <property name="text">
-    <string>Ascent</string>
+    <string>Recipe</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QLabel" name="elevation">
+  <widget class="QLabel" name="ordered">
    <property name="geometry">
     <rect>
-     <x>70</x>
-     <y>410</y>
-     <width>161</width>
-     <height>16</height>
+     <x>90</x>
+     <y>210</y>
+     <width>131</width>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">
-    <string>Elevation</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
+    <string>ordered</string>
    </property>
   </widget>
-  <widget class="QLabel" name="wob">
+  <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>450</x>
-     <y>470</y>
+     <x>20</x>
+     <y>190</y>
      <width>55</width>
-     <height>16</height>
+     <height>61</height>
     </rect>
    </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
    <property name="text">
-    <string>wob</string>
+    <string>Num times ordered</string>
    </property>
    <property name="wordWrap">
     <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="trail">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>490</y>
-     <width>211</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>trailType</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QLabel" name="distance">
-   <property name="geometry">
-    <rect>
-     <x>450</x>
-     <y>410</y>
-     <width>291</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>distance</string>
-   </property>
-   <property name="wordWrap">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QCheckBox" name="saveCheckBox">
-   <property name="geometry">
-    <rect>
-     <x>680</x>
-     <y>510</y>
-     <width>91</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Save Trail</string>
    </property>
   </widget>
  </widget>

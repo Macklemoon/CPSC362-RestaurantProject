@@ -38,11 +38,11 @@ bool DB::openDB()
         // Check if database was successfully opened
         if(!database.open())
         {
-            qDebug() << "Error: connection to database failed";
+            qDebug() << "WHITEBOX 0 | Error: connection to database failed";
         }
         else
         {
-            qDebug() << "Success: database opened";
+            qDebug() << "WHITEBOX 0 | Success: database opened";
         }
     }
 
@@ -69,7 +69,7 @@ bool DB::closeDB()
     {
         database.close();
         database.removeDatabase(QSqlDatabase::defaultConnection);
-        qDebug() << ("Success: database closed");
+        qDebug() << ("WHITEBOX FIN | Success: database closed");
     }
 
     return database.isOpen();
